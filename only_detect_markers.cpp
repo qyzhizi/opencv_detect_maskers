@@ -16,13 +16,13 @@ int main(int argc, char *argv[]) {
 			cerr << "ERROR! Unable to open camera\n";
 			return -1;
 		 }
-		//设置右相机的输出格式
+	//设置右相机的输出格式
 	capr.set(CV_CAP_PROP_FPS, 30);  
 	capr.set(CV_CAP_PROP_FRAME_WIDTH, 1280);  //640 1280
 	capr.set(CV_CAP_PROP_FRAME_HEIGHT, 720);//480 720
 	capr.set(CAP_PROP_FOURCC,CV_FOURCC('M', 'J', 'P', 'G'));
 
-	int dictionaryId=10;//DICT_6X6_250
+	int dictionaryId=0;//DICT_6X6_250
 	// cv::aruco::Dictionary dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250); 
 	Ptr<aruco::Dictionary> dictionary =aruco::getPredefinedDictionary(aruco::PREDEFINED_DICTIONARY_NAME(dictionaryId));
 	while (capr.grab()) { 
@@ -55,8 +55,9 @@ int main(int argc, char *argv[]) {
 				// }
 		}
 	cv::imshow("out", imageCopy); 
-	char key = (char) cv::waitKey(0); 
+	char key = (char) cv::waitKey(10); 
 	if (key == 27) break; 
 
 	}
+	return 0;
 }
