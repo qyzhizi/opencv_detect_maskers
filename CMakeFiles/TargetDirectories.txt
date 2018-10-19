@@ -1,0 +1,3 @@
+/home/qy/software/opencv_program/opencv_marker/detect_markers/CMakeFiles/edit_cache.dir
+/home/qy/software/opencv_program/opencv_marker/detect_markers/CMakeFiles/rebuild_cache.dir
+/home/qy/software/opencv_program/opencv_marker/detect_markers/CMakeFiles/only_detect_markers_exe.dir
