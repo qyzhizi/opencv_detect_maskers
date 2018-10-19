@@ -59,3 +59,7 @@ enum  	cv::aruco::PREDEFINED_DICTIONARY_NAME {
 		}
 	cv::imshow("out", imageCopy); 
 ```
+**reference**:<br>
+https://blog.csdn.net/ZJU_fish1996/article/details/72312514
+https://github.com/qyzhizi/opencv_contrib/blob/master/modules/aruco/samples/detect_markers.cpp
+
